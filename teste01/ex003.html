@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste 13 mai</h1>
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Facilis, nemo eos. Nostrum quidem blanditiis rem quod tempore adipisci perspiciatis laborum voluptate repellat iste. Facilis vero necessitatibus delectus perspiciatis impedit quaerat!</p>
+    <p>Hoje vou estudar <strong>DOM</strong></p>
+    <div id="botao1">Clique Aqui!</div>
+    <div id="meunome">Thiago S. Gonçalves</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d1 = window.document.getElementById('botao1')
+        var d2 = window.document.querySelector('div#meunome')
+
+        window.document.write(p1.innerHTML)
+        p1.style.color = 'blue'
+        corpo.style.background = 'burlywood'
+        d1.style.background = 'blue'
+        d1.style.color = 'white'
+
+        d2.style.background = 'black'
+        d2.style.color = 'white'
+    </script>
+</body>
+</html>
