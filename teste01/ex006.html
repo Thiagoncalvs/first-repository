@@ -18,6 +18,11 @@
         <li><a href="file:///home/thiago-s-goncalves/Documents/ThiagoncalvsPC/first-repository/teste01/ex005.html">005</a></li>
         <li><a href="file:///home/thiago-s-goncalves/Documents/ThiagoncalvsPC/first-repository/teste01/ex006.html">006</a></li>
     </ul>
+    <form oninput="result.value=parseInt(b.value)">
+        <input type="range" name="b" id="b" value="0" max="300" onchange="verificando()">
+        <output name="result" for="b">0</output><br><br>
+        <div id="resu"></div>
+    </form>
     <script src="js/script006.js"></script>
 </body>
 </html>
