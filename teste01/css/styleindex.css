@@ -1,0 +1,32 @@
+div#grid-conteiner{
+    display: grid;
+    grid-template-areas: 'header''body''footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+/*Configuração Cabeça*/
+header#cabeca{
+    background: red;
+    grid-area: header;
+}
+/*Configuração menu*/
+div#menumain{
+
+}
+#menumain li{
+    list-style: none;
+    display: inline;
+}
+#menumain li a{
+    text-decoration: none;
+}
+/*Configuração corpo*/
+section#corpo{
+    background: blue;
+    grid-area: body;
+}
+/*Configuração rodape*/
+footer#rodape{
+    background: green;
+    grid-area: footer;
+}
