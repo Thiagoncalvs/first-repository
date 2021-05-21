@@ -8,10 +8,13 @@ const nextBtn = document.querySelector('#nextBtn')
 
 // Counter
 
-let Counter = 1
+let Counter = 0
 const size = ImagensSlide[0].clientWidth
 
 ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
+
+
+
 
 // Button Listeners
 
@@ -41,4 +44,8 @@ ContainerSlide.addEventListener('transitionend', ()=>{
         Counter = ImagensSlide.length -Counter
         ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
     }
-})  
+})
+
+autoSlide(){
+    setTimeout(this.nextBtn, 5000)
+}
