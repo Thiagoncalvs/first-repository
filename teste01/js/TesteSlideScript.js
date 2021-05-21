@@ -8,16 +8,28 @@ const nextBtn = document.querySelector('#nextBtn')
 
 // Counter
 
-let Counter = 0
+let Counter = 4
 const size = ImagensSlide[0].clientWidth
 
+ContainerSlide.style.transition = "transform 10s ease-in-out"
+Counter++
 ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
+
+ContainerSlide.addEventListener('transitionend', ()=>{
+    console.log(ContainerSlide[Counter])
+    if(ImagensSlide[Counter].id === 'firstClone'){
+        ContainerSlide.style.transition = 'none'
+        Counter = ImagensSlide.length -Counter
+        ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
+    }
+})
+
 
 
 
 
 // Button Listeners
-
+/*
 nextBtn.addEventListener('click', () => {
     if (Counter >= ImagensSlide.length -1) return
     ContainerSlide.style.transition = "transform 1s ease-in-out"
@@ -45,7 +57,4 @@ ContainerSlide.addEventListener('transitionend', ()=>{
         ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
     }
 })
-
-autoSlide(){
-    setTimeout(this.nextBtn, 5000)
-}
+*/
