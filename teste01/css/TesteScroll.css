@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.EstruturaGeral{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 800px);
+}
+
+.section1{
+    background: lightblue;
+    margin-bottom: 50px;
+}
+
+.EstruturaGeral .section2{
+    background: lightgreen;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding: 10px;
+}
+.EstruturaGeral .section2 .CorredorAbsoluto{
+        width: 100%;
+        height: 100%;
+        background: rebeccapurple;
+    }
+
+
+    .EstruturaGeral .section2 .CorredorAbsoluto .Dvermelho{
+        background: red;
+        width: 100%;
+        height: 150px;
+        position: sticky;
+        top: 40%;
+    }
+
+    .EstruturaGeral .section2 .DivStatico{
+        background: black;
+    }
+
+.section3{
+    background: lightsalmon;
+}
