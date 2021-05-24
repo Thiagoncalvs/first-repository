@@ -8,7 +8,7 @@ const nextBtn = document.querySelector('#nextBtn')
 
 // Counter
 
-let Counter = 0
+let Counter = 1
 const size = ImagensSlide[0].clientWidth
 
 ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
