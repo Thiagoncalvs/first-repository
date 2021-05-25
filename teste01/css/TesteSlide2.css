@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: #2daebf dashed 3px;
+}
+
+.Estrutura-suprema{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    background: lightcoral;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.Estrutura-suprema .Estrutura-geral1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+    width: auto;
+    height: auto;
+    /* overflow: hidden; */
+    margin-bottom: 20px;
+    background: red;
+    padding: 10px;
+}
+    .Estrutura-suprema .Estrutura-geral1 header.cabecalho{
+        background: #cffd03;
+        text-align: center;
+        padding: 20px;
+        width: auto;
+    }
+    .Estrutura-suprema .Estrutura-geral1 section.sectionMain{
+        background: lightgreen;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        justify-items: center;
+    }
+        .Estrutura-geral1 .sectionMain #SlideCarouselAuto{
+            border: 2px solid black;
+            max-width: 800px;
+            height: auto;
+            /* margin: 20px auto; */
+            overflow: hidden;
+
+        }
+            .Estrutura-geral1 .sectionMain #SlideCarouselAuto #SlideCarouselAuto-Itens{
+                display: flex;
+                animation-name: translacao;
+                animation-duration: 40s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+
+            @keyframes translacao {
+                to{
+                    transform: translateX(-2405px);
+                }
+            }
+
+
+                .Estrutura-geral1 .sectionMain #SlideCarouselAuto #SlideCarouselAuto-Itens img{
+                margin-right: 5px;
+                max-width: 100%;
+                display: block;
+                }
+    .Estrutura-suprema .Estrutura-geral1 footer.rodape{
+        background: lightgoldenrodyellow;
+        text-align: center;
+        padding: 20px;
+        width: auto;
+    }
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////// */
+    .Estrutura-suprema .Estrutura-geral2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+        width: auto;
+        height: auto;
+        /* overflow: hidden; */
+        margin-bottom: 20px;
+        background: red;
+        padding: 10%;
+    }
+        .Estrutura-suprema .Estrutura-geral2 header.cabecalho{
+            background: #cffd03;
+            text-align: center;
+            padding: 20px;
+            width: auto;
+        }
+        .Estrutura-suprema .Estrutura-geral2 section.sectionMain{
+            background: lightgreen;
+            width: auto;
+        }
+        .Estrutura-suprema .Estrutura-geral2 footer.rodape{
+            background: lightgoldenrodyellow;
+            text-align: center;
+            padding: 20px;
+            width: auto;
+        }
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+                                /* CONFIGURAÇÃO GERAL */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+

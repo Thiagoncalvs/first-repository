@@ -17,14 +17,14 @@ ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
 // Button Listeners
 
 nextBtn.addEventListener('click', () => {
-    if (Counter >= ImagensSlide.length -1) return
+    if (Counter > ImagensSlide.length -1) return
     ContainerSlide.style.transition = "transform 1s ease-in-out"
     Counter++
     ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
 })
 
 prevBtn.addEventListener('click', () => {
-    if (Counter <= 0) return
+    if (Counter < 0) return
     ContainerSlide.style.transition = "transform 1s ease-in-out"
     Counter--
     ContainerSlide.style.transform = 'translateX(' + (-size * Counter) + 'px)'
